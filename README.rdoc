@@ -13,7 +13,7 @@ prefixed, for instance with 'raw_'. For example, for an attribute named
 Then in the models, to have the virtual attributes returning and accepting
 values of type +IncompleteDate+ declare the following:
 
-<tt>incomplete_date_attrs :birth_date, :death_date, :prefix => 'raw'</tt>
+  incomplete_date_attrs :birth_date, :death_date, :prefix => 'raw'
 
 The default prefix is 'raw' so we do not need to declare it, unless we used
 another prefix for the columns.
@@ -21,10 +21,10 @@ another prefix for the columns.
 Alternatively, if there's no regular relation between the column name and the
 expected attribute name, use the following way:
 
-<tt>incomplete_date_attr :attr_name, :raw_column_name</tt>
+  incomplete_date_attr :attr_name, :raw_column_name
 
 Note that in this last example we used the singular method call (finished in
-<tt>attr</tt> instead of <tt>attrs</tt>). In this case we pass the attribute
++attr+ instead of +attrs+). In this case we pass the attribute
 name we want, followed by the real column name found in the database.
 
 == License
