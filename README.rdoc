@@ -27,6 +27,25 @@ Note that in this last example we used the singular method call (finished in
 +attr+ instead of +attrs+). In this case we pass the attribute
 name we want, followed by the real column name found in the database.
 
+== Installation
+
+From your rails app directory do the following:
+
+  ./script/plugin install git://github.com/gnapse/incomplete_date.git
+
+Alternatively, if you are tracking your own project with git and you want to have this plugin as a git submodule,
+instead of redundantly tracking this plugin's source code in your own repo, you can install it this way instead:
+
+  git submodule add git://github.com/gnapse/incomplete_date.git vendor/plugins/incomplete_date/
+
+== Contributing
+
+If you want to contribute to (or fork) this project you can clone it by doing the following:
+
+  git clone add git://github.com/gnapse/incomplete_date.git
+
+And then send pull requests.
+
 == License
 
 Released under the MIT license.
