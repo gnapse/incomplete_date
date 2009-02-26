@@ -19,6 +19,8 @@ class IncompleteDate
       @day, @month, @year = value.mday, value.month, value.year
     when IncompleteDate
       @day, @month, @year, @circa = value.day, value.month, value.year, value.circa
+    when nil #invaluable for existing databases!
+    	@day, @month, @year, @circa = 0, 0, 0, false
     else
       raise ArgumentError, "Invalid #{self.class.name} specification"
     end
