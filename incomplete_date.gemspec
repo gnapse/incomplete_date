@@ -28,5 +28,5 @@ which is very common in historical archives, particularly in genealogy."
 
   spec.add_dependency "rails"
 
-  spec.add_development_dependency "sqlite3"
+  spec.add_development_dependency "sqlite3", "~> 1.3.6"
 end
