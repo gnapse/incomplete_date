@@ -1,3 +1,7 @@
+require 'incomplete_date/date'
+require 'incomplete_date/active_record'
+require 'incomplete_date/form_builder'
+
 class IncompleteDate
   attr_reader :day, :month, :year
   attr_accessor :circa
