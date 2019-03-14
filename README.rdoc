@@ -29,14 +29,22 @@ name we want, followed by the real column name found in the database.
 
 == Installation
 
-From your rails app directory do the following:
+Add this line to your application's Gemfile:
 
-  ./script/plugin install git://github.com/gnapse/incomplete_date.git
+```ruby
+gem 'incomplete_date'
+```
 
-Alternatively, if you are tracking your own project with git and you want to have this plugin as a git submodule,
-instead of redundantly tracking this plugin's source code in your own repo, you can install it this way instead:
+And then execute:
 
-  git submodule add git://github.com/gnapse/incomplete_date.git vendor/plugins/incomplete_date/
+```bash
+$ bundle install
+```
+
+Alternatively, you can install it yourself as:
+```bash
+$ gem install incomplete_date
+```
 
 == Contributing
 
@@ -53,3 +61,4 @@ Released under the MIT license.
 == Authors
 
 * Ernesto García <gnapse@gmail.com>
+* Daniel Collado-Ruiz <daniel@collado-ruiz.es>
