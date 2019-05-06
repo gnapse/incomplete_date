@@ -15,15 +15,6 @@ which is very common in historical archives, particularly in genealogy."
   spec.description = "This plugin creates a Value Object class that controls the logic of incomplete dates. It also creates a class method incomplete_date_attr to hook onto Active Record objects, so some of the attributes are stored in the database as an integer instead of a date"
   spec.license     = "MIT"
 
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
-
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
   spec.add_dependency "rails"

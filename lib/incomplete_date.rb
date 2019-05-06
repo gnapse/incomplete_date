@@ -11,7 +11,7 @@ class IncompleteDate
     @circa = false
 
     case value
-    when Fixnum
+    when Integer
       @circa = (value < 0)
       num = value.abs
       num, @day = num.divmod(100)
